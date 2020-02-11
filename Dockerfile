@@ -1,8 +1,8 @@
 #-----------------------------------------------------------------------------
 # start by building the basic container
 #-----------------------------------------------------------------------------
-FROM parflow/parflow:latest
-MAINTAINER Steven Smith <smith84@llnl.gov>
+FROM jswilley5/parflow-test:latest
+MAINTAINER Jackson Swilley <jswilley@mymail.mines.edu>
 
 #-----------------------------------------------------------------------------
 # Set environment vars
