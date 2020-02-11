@@ -2,10 +2,10 @@
 
 if docker ps >& /dev/null
 then
-   docker run --rm -v $(pwd):/data parflow/parflow $*
+   docker run --rm -v $(pwd):/data jswilley5/parflow-test $*
 elif singularity version >& /dev/null
 then
-   singularity run docker://parflow/parflow $*
+   singularity run docker://jswilley5/parflow-test $*
 else
    echo "Couldn't run docker or singularity"
 fi
